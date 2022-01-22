@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\hooks">
+      <UniqueIdentifier>{564ec418-72d5-4af7-9a1e-71d500572435}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\hooks">
+      <UniqueIdentifier>{f3f49e21-44fc-4db0-8f87-b7c7b9339fe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\sdk">
+      <UniqueIdentifier>{a5ab6cfc-8d54-496b-a4ea-261239e2f2a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\sdk">
+      <UniqueIdentifier>{e0eca017-79f6-4cd1-8d60-fb30bdf90f70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\skinchanger">
+      <UniqueIdentifier>{c5c56c73-9403-4167-949b-adc822b2e32c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\skinchanger">
+      <UniqueIdentifier>{b6a6023c-6bc4-4b26-a7f3-b6e1e3994184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\sdk\classes">
+      <UniqueIdentifier>{23c60915-0216-4dde-9df8-0c9eb3737466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\sdk\classes">
+      <UniqueIdentifier>{d1a83ad4-11e8-4227-8ebc-bf2ed7001e74}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\FireEventClientSide.cpp">
+      <Filter>Исходные файлы\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\FrameStageNotify.cpp">
+      <Filter>Исходные файлы\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\Hooks.cpp">
+      <Filter>Исходные файлы\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\RecvVarProxy.cpp">
+      <Filter>Исходные файлы\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="skinchanger\Knife.cpp">
+      <Filter>Исходные файлы\skinchanger</Filter>
+    </ClCompile>
+    <ClCompile Include="skinchanger\Skin.cpp">
+      <Filter>Исходные файлы\skinchanger</Filter>
+    </ClCompile>
+    <ClCompile Include="skinchanger\SkinChanger.cpp">
+      <Filter>Исходные файлы\skinchanger</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Netvars.cpp">
+      <Filter>Исходные файлы\sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Sdk.cpp">
+      <Filter>Исходные файлы\sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\Vmt.cpp">
+      <Filter>Исходные файлы\sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\classes\Client.cpp">
+      <Filter>Исходные файлы\sdk\classes</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\classes\Engine.cpp">
+      <Filter>Исходные файлы\sdk\classes</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\classes\Entity.cpp">
+      <Filter>Исходные файлы\sdk\classes</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\classes\EntityList.cpp">
+      <Filter>Исходные файлы\sdk\classes</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\classes\GameEvent.cpp">
+      <Filter>Исходные файлы\sdk\classes</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\classes\GameEventsManager.cpp">
+      <Filter>Исходные файлы\sdk\classes</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\classes\ModelInfo.cpp">
+      <Filter>Исходные файлы\sdk\classes</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\classes\Player.cpp">
+      <Filter>Исходные файлы\sdk\classes</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\classes\ViewModel.cpp">
+      <Filter>Исходные файлы\sdk\classes</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\classes\Weapon.cpp">
+      <Filter>Исходные файлы\sdk\classes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hooks\RecvVarProxy.h">
+      <Filter>Файлы заголовков\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\Hooks.h">
+      <Filter>Файлы заголовков\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\FrameStageNotify.h">
+      <Filter>Файлы заголовков\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\FireEventClientSide.h">
+      <Filter>Файлы заголовков\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="skinchanger\Knife.h">
+      <Filter>Файлы заголовков\skinchanger</Filter>
+    </ClInclude>
+    <ClInclude Include="skinchanger\Skin.h">
+      <Filter>Файлы заголовков\skinchanger</Filter>
+    </ClInclude>
+    <ClInclude Include="skinchanger\SkinChanger.h">
+      <Filter>Файлы заголовков\skinchanger</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Vmt.h">
+      <Filter>Файлы заголовков\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Sdk.h">
+      <Filter>Файлы заголовков\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\Netvars.h">
+      <Filter>Файлы заголовков\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\classes\Client.h">
+      <Filter>Файлы заголовков\sdk\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\classes\Engine.h">
+      <Filter>Файлы заголовков\sdk\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\classes\Entity.h">
+      <Filter>Файлы заголовков\sdk\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\classes\EntityList.h">
+      <Filter>Файлы заголовков\sdk\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\classes\GameEvent.h">
+      <Filter>Файлы заголовков\sdk\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\classes\GameEventsManager.h">
+      <Filter>Файлы заголовков\sdk\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\classes\ModelInfo.h">
+      <Filter>Файлы заголовков\sdk\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\classes\Player.h">
+      <Filter>Файлы заголовков\sdk\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\classes\ViewModel.h">
+      <Filter>Файлы заголовков\sdk\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\classes\Weapon.h">
+      <Filter>Файлы заголовков\sdk\classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
