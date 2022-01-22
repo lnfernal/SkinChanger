@@ -9,17 +9,11 @@ namespace skinchanger
 	{
 		switch (weaponId)
 		{
-		case sdk::WeaponId::Knifegg:
-			return "models/weapons/v_knife_gg.mdl";
-
 		case sdk::WeaponId::Knife:
 			return "models/weapons/v_knife_default_ct.mdl";
 
 		case sdk::WeaponId::KnifeT:
 			return "models/weapons/v_knife_default_t.mdl";
-
-		case sdk::WeaponId::KnifeGhost:
-			return "models/weapons/v_knife_ghost.mdl";
 
 		case sdk::WeaponId::Bayonet:
 			return "models/weapons/v_knife_bayonet.mdl";
@@ -70,7 +64,7 @@ namespace skinchanger
 			return "models/weapons/v_knife_outdoor.mdl";
 
 		case sdk::WeaponId::KnifeStiletto:
-			return "models/weapons/v_knife_stilleto.mdl";
+			return "models/weapons/v_knife_stiletto.mdl";
 
 		case sdk::WeaponId::KnifeWidowmaker:
 			return "models/weapons/v_knife_widowmaker.mdl";
@@ -87,17 +81,11 @@ namespace skinchanger
 	{
 		switch (weaponId)
 		{
-		case sdk::WeaponId::Knifegg:
-			return "models/weapons/w_knife_gg.mdl";
-
 		case sdk::WeaponId::Knife:
 			return "models/weapons/w_knife_default_ct.mdl";
 
 		case sdk::WeaponId::KnifeT:
 			return "models/weapons/w_knife_default_t.mdl";
-
-		case sdk::WeaponId::KnifeGhost:
-			return "models/weapons/w_knife_ghost.mdl";
 
 		case sdk::WeaponId::Bayonet:
 			return "models/weapons/w_knife_bayonet.mdl";
@@ -148,7 +136,7 @@ namespace skinchanger
 			return "models/weapons/w_knife_outdoor.mdl";
 
 		case sdk::WeaponId::KnifeStiletto:
-			return "models/weapons/w_knife_stilleto.mdl";
+			return "models/weapons/w_knife_stiletto.mdl";
 
 		case sdk::WeaponId::KnifeWidowmaker:
 			return "models/weapons/w_knife_widowmaker.mdl";
@@ -185,17 +173,11 @@ const char* skinchanger::getKnifeName(sdk::WeaponId weaponId)
 {
 	switch (weaponId)
 	{
-	case sdk::WeaponId::Knifegg:
-		return "knifegg";
-
 	case sdk::WeaponId::Knife:
 		return "knife";
 
 	case sdk::WeaponId::KnifeT:
 		return "knife_t";
-
-	case sdk::WeaponId::KnifeGhost:
-		return "knife_ghost";
 
 	case sdk::WeaponId::Bayonet:
 		return "bayonet";
@@ -246,7 +228,7 @@ const char* skinchanger::getKnifeName(sdk::WeaponId weaponId)
 		return "knife_outdoor";
 
 	case sdk::WeaponId::KnifeStiletto:
-		return "knife_stilleto";
+		return "knife_stiletto";
 
 	case sdk::WeaponId::KnifeWidowmaker:
 		return "knife_widowmaker";
@@ -261,7 +243,7 @@ const char* skinchanger::getKnifeName(sdk::WeaponId weaponId)
 
 int skinchanger::getKnifeSequence(sdk::WeaponId weaponId, int sequence)
 {
-	int knifeCssLookatSequences[]{ 12, 15 };
+	const int knifeCssLookatSequences[]{ 12, 15 };
 
 	switch (weaponId)
 	{
