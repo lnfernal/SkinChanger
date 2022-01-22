@@ -26,20 +26,17 @@ void skinchanger::changeSkins()
 		for (int i = 0; i < sdk::PLAYER_MAX_WEAPONS; ++i)
 		{
 			sdk::Weapon* weapon = localPlayer->getWeapon(i);
-			if (weapon != nullptr)
+			if (weapon != nullptr && weapon->originalOwnerXuid() == localPlayerInfo.xuid)
 			{
-				if (weapon->originalOwnerXuid() == localPlayerInfo.xuid)
+				if (weapon->id() == knifeId || isChangeableKnife(weapon->id()))
 				{
-					if (weapon->id() == knifeId || isChangeableKnife(weapon->id()))
-					{
-						changeKnife(localPlayer, weapon, knifeId);
-					}
+					changeKnife(localPlayer, weapon, knifeId);
+				}
 
-					std::map<sdk::WeaponId, Skin>::iterator skin = skins.find(weapon->id());
-					if (skin != skins.end())
-					{
-						skin->second.change(weapon);
-					}
+				std::map<sdk::WeaponId, Skin>::iterator skin = skins.find(weapon->id());
+				if (skin != skins.end())
+				{
+					skin->second.change(weapon);
 				}
 			}
 		}
